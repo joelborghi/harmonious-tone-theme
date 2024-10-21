@@ -29,6 +29,7 @@ To keep track of progress, I created a list of weeks and tasks, completed (✅) 
 #### Second Week - 21/10/2024
 
 * [ ✅ ] Link github repository to Shopify to keep track of both CMS and code with [Shopify for GitHub](https://github.com/apps/shopify)
+* [ ✅ ] Pull CMS changes into codebase to understand how it works
 * [ in progress ] Basic understanding of Theme file structure
 * [ in progress ] Basic theme change through code using liquid ()
 * [ in progress ] Create first component and render at home page (custom top bar)
