@@ -32,6 +32,7 @@ To keep track of progress, I created a list of weeks and tasks, completed (✅) 
 * [ ✅ ] Basic understanding of Theme file structure
 * [ ✅ ] Basic theme change through code using liquid
 * [ ✅ ] Change existing component (announcement bar), add markup, variables, filters, styles... etc.
+* [ ✅ ] Add css animation to header logo
 * [ in progress ] Create a custom component
 * [ to-do ] Continue making changes / adding features / learning...
 
