@@ -3598,19 +3598,19 @@ details-disclosure > details {
 
 /* Logo spin animation when hovered */
 .header__heading-logo-wrapper {
-  display: inline-block; /* Ensure it can be transformed */
-  transition: transform 0.6s ease; /* Smooth transition */
+  display: inline-block;
+  transition: transform 0.6s ease;
 }
 
 .header__heading-logo-wrapper:hover {
-  animation: spin 0.6s forwards; /* Trigger spin animation on hover */
+  animation: spin 0.6s forwards;
 }
 
 @keyframes spin {
   from {
-      transform: rotate(0deg); /* Start at 0 degrees */
+      transform: rotate(0deg);
   }
   to {
-      transform: rotate(360deg); /* End at 360 degrees */
+      transform: rotate(360deg);
   }
 }
