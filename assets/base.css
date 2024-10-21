@@ -3595,3 +3595,22 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+/* Logo spin animation when hovered */
+.header__heading-logo-wrapper {
+  display: inline-block; /* Ensure it can be transformed */
+  transition: transform 0.6s ease; /* Smooth transition */
+}
+
+.header__heading-logo-wrapper:hover {
+  animation: spin 0.6s forwards; /* Trigger spin animation on hover */
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg); /* Start at 0 degrees */
+  }
+  to {
+      transform: rotate(360deg); /* End at 360 degrees */
+  }
+}
