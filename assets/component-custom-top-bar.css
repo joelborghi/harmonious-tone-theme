@@ -1,0 +1,13 @@
+.top-bar {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: rgb(36, 37, 37);
+  text-align: center;
+  background-color: #bbb8b8;
+  padding: 10px;
+}
+
+.top-bar a {
+  text-decoration: none;
+}
