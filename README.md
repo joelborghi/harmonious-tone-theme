@@ -9,7 +9,7 @@ Shopify is a tool for creating online stores using web technologies.
 
 To keep track of progress, I created a list of weeks and tasks, completed (✅) to-do and in progress.
 
-#### First Week
+#### First Week - 14/10/2024
 
 
 * [ ✅ ] Get basic understanding of Shopify
@@ -26,7 +26,7 @@ To keep track of progress, I created a list of weeks and tasks, completed (✅) 
 * [ ✅ ] Search and define a real shop to get ideas of components and functionalities
 * [ ✅ ] [Guitar shop reference](https://reference.com.br)
 
-#### Second Week
+#### Second Week - 21/10/2024
 
 * [ in progress ] Basic understanding of Theme file structure
 * [ in progress ] Basic theme change through code using liquid ()
