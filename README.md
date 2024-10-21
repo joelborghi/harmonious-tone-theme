@@ -1,6 +1,6 @@
 # Harmonious Tone - Basic theme for guitar shops
 
-This repository's aim is to start learning Shopify starting with theme development from Dawn base theme.
+This repository's aims are of learning purposes towards Shopify development, starting from theme development using Dawn theme as base.
 
 ## Developer Roadmap
 
