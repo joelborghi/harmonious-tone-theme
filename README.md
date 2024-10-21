@@ -29,10 +29,10 @@ To keep track of progress, I created a list of weeks and tasks, completed (✅) 
 
 * [ ✅ ] Link github repository to Shopify to keep track of both CMS and code with [Shopify for GitHub](https://github.com/apps/shopify)
 * [ ✅ ] Pull CMS changes into codebase to understand how it works
-* [ in progress ] Basic understanding of Theme file structure
-* [ in progress ] Basic theme change through code using liquid ()
-* [ in progress ] Create first component and render at home page (custom top bar)
-changes
+* [ ✅ ] Basic understanding of Theme file structure
+* [ ✅ ] Basic theme change through code using liquid
+* [ ✅ ] Change existing component (announcement bar), add markup, variables, filters, styles... etc.
+* [ in progress ] Create a custom component
 * [ to-do ] Continue making changes / adding features / learning...
 
 ## Dawn theme doc
