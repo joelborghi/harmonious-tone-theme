@@ -1,4 +1,41 @@
-# Dawn
+# Harmonious Tone - Basic theme for guitar shops
+
+This repository's aim is to start learning Shopify starting with theme development from Dawn base theme.
+
+## Developer Roadmap
+
+This is my roadmap for learning Shopify as a developer.
+Shopify is a tool for creating online stores using web technologies.
+
+To keep track of progress, I created a list of weeks and tasks, to-do and completed.
+
+#### First Week
+
+
+* [ ✅ ] Get basic understanding of Shopify
+* [ ✅ ] Create Shopify Partner's Account
+* [ ✅ ] Setup shopify-cli with npm
+* [ ✅ ] Get basic understanding about objects
+* [ ✅ ] Get basic understanding about liquid
+* [ ✅ ] Get basic understanding about filters
+* [ ✅ ] Create a development Store
+* [ ✅ ] Start a basic new theme based on Dawn
+* [ ✅ ] Change and update theme visuals through CMS editor
+* [ ✅ ] Define problem / solution domain (guitar shop / store)
+* [ ✅ ] Check real guitar shops from the internet to capture ideas
+* [ ✅ ] Search and define a real shop to get ideas of components and functionalities
+* [ ✅ ] [Guitar shop reference](https://reference.com.br)
+
+#### Second Week
+
+* [ in progress ] Basic understanding of Theme file structure
+* [ in progress ] Basic theme change through code using liquid ()
+* [ in progress ] Create first component and render at home page (custom top bar)
+* [ to-do ] Link github repository to Shopify to keep track of both CMS and code changes
+* [ to-do ] Continue making changes / adding features / learning...
+
+
+## Regular Shopify Theme Docs
 
 [![Build status](https://github.com/shopify/dawn/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Shopify/dawn/actions/workflows/ci.yml?query=branch%3Amain)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?color=informational)](/.github/CONTRIBUTING.md)
