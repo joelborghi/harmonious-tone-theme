@@ -7,7 +7,7 @@ This repository's aim is to start learning Shopify starting with theme developme
 This is my roadmap for learning Shopify as a developer.
 Shopify is a tool for creating online stores using web technologies.
 
-To keep track of progress, I created a list of weeks and tasks, to-do and completed.
+To keep track of progress, I created a list of weeks and tasks, completed (✅) to-do and in progress.
 
 #### First Week
 
