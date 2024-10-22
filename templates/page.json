@@ -1,14 +1,47 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "rich_text_mpY8XJ": {
+      "type": "rich-text",
+      "blocks": {
+        "text_PtMWrf": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>About Us</h1><p>Welcome to Harmonious Tone!</p><p>At Harmonious Tone, we believe that music is a universal language that brings people together. Founded in [Year], our online guitar shop was born out of a passion for music and a desire to provide musicians of all levels with high-quality instruments and accessories.</p><h2>Our Mission</h2><p>Our mission is to inspire creativity and foster a love for music by offering a diverse selection of guitars, from classic acoustics to cutting-edge electrics. We aim to make the journey of finding the perfect instrument enjoyable and accessible for everyone, whether you're a seasoned pro or picking up a guitar for the first time.</p><h2>What We Offer</h2><ul><li><strong>Wide Selection</strong>: We stock a carefully curated range of guitars from top brands, ensuring that there is something for every player and budget.</li><li><strong>Expert Advice</strong>: Our team consists of passionate musicians and knowledgeable staff who are always ready to help you find the right instrument. We offer personalized recommendations based on your style and preferences.</li><li><strong>Quality Assurance</strong>: We take pride in the quality of our products. Each guitar is thoroughly inspected to ensure it meets our high standards before it reaches your hands.</li><li><strong>Customer Support</strong>: Your satisfaction is our priority. We offer dedicated customer support to assist you with any questions or concerns you may have.</li></ul><h2>Join Our Community</h2><p>At Harmonious Tone, we don't just sell guitars; we foster a community of music lovers. Join us on our social media platforms, where we share tips, tutorials, and the latest news from the world of music. We also host regular events, workshops, and contests to bring musicians together and celebrate our shared passion.</p><p>Thank you for visiting Harmonious Tone. We are excited to be part of your musical journey and can't wait to help you find the perfect guitar!</p><h3>Connect With Us</h3><p>Feel free to reach out to us at [contact email] or follow us on [social media links] for updates, promotions, and more!</p><p>Happy strumming! 🎸</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_PtMWrf"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_mpY8XJ"
   ]
 }
