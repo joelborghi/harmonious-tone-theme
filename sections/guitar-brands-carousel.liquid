@@ -20,14 +20,11 @@
       {% assign image = section.settings[image_key] %}
       {% assign link = section.settings[link_key] %}
 
-      <p>Image Key: {{ image_key }} - Image URL: {{ image }}</p>
-      <!-- Debug output -->
-
       {% if image %}
         <div class="brands-carousel__item">
           <a href="{{ link }}">
             <img
-              src="https://cdn.shopify.com/s/files/1/0676/5133/8413/files/LogoBcRich.png"
+              src="{{ image | image_url: 'master' }}"
               alt="Brand {{ i }}"
               class="brands-carousel"
               width="{{ icon_width }}"
