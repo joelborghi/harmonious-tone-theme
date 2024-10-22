@@ -41,8 +41,8 @@ Enter the 🐰 hole...
 * [ ✅ ] Change fonts through CMS
 * [ ✅ ] Add blog section to home page + posts
 * [ ✅ ] Personalize Contact Page
-* [ in-progress ] Modify components styles
-* [ todo ] Create a custom component
+* [ ✅ ] Modify components styles
+* [ in-progress ] Create a custom component - brand carousel with dynamic images
 * [ to-do ] Continue making changes / adding features / learning...
 
 ## Dawn theme doc
