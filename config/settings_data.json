@@ -11,6 +11,7 @@
   "current": {
     "logo": "shopify://shop_images/music-2022796_1920.png",
     "logo_width": 220,
+    "favicon": "shopify://shop_images/ht-icon.png",
     "type_header_font": "rubik_n5",
     "heading_scale": 100,
     "type_body_font": "rubik_n4",
