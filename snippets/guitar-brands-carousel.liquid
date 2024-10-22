@@ -9,143 +9,27 @@
 {% assign icon_height = 200 %}
 
 {{ 'component-brands-carousel.css' | asset_url | stylesheet_tag }}
-
 <script src="{{ 'brands-carousel.js' | asset_url }}" defer="defer"></script>
 
 <h4 class="brands-carousel__title">Shop by Brand</h4>
 <div class="brands-carousel">
   <div class="brands-carousel__container">
-    <div class="brands-carousel__item">
-      <a href="#">
-        <img
-          src="{{ 'LogoBcRich.png' | asset_url }}"
-          alt="Bc Rich"
-          class="brands-carousel"
-          width="{{ icon_width }}"
-          height="{{ icon_height }}"
-        >
-      </a>
-    </div>
-    <div class="brands-carousel__item">
-      <a href="#">
-        <img
-          src="{{ 'LogoCharvel.png' | asset_url }}"
-          alt="Charvel"
-          class="brands-carousel"
-          width="{{ icon_width }}"
-          height="{{ icon_height }}"
-        >
-      </a>
-    </div>
-    <div class="brands-carousel__item">
-      <a href="#">
-        <img
-          src="{{ 'LogoCort.png' | asset_url }}"
-          alt="Cort"
-          class="brands-carousel"
-          width="{{ icon_width }}"
-          height="{{ icon_height }}"
-        >
-      </a>
-    </div>
-    <div class="brands-carousel__item">
-      <a href="#">
-        <img
-          src="{{ 'LogoESP.png' | asset_url }}"
-          alt="ESP"
-          class="brands-carousel"
-          width="{{ icon_width }}"
-          height="{{ icon_height }}"
-        >
-      </a>
-    </div>
-    <div class="brands-carousel__item">
-      <a href="#">
-        <img
-          src="{{ 'LogoFender.png' | asset_url }}"
-          alt="Fender"
-          class="brands-carousel"
-          width="{{ icon_width }}"
-          height="{{ icon_height }}"
-        >
-      </a>
-    </div>
-    <div class="brands-carousel__item">
-      <a href="#">
-        <img
-          src="{{ 'LogoGibson.png' | asset_url }}"
-          alt="Gibson"
-          class="brands-carousel"
-          width="{{ icon_width }}"
-          height="{{ icon_height }}"
-        >
-      </a>
-    </div>
-    <div class="brands-carousel__item">
-      <a href="#">
-        <img
-          src="{{ 'LogoIbanez.png' | asset_url }}"
-          alt="Ibanez"
-          class="brands-carousel"
-          width="{{ icon_width }}"
-          height="{{ icon_height }}"
-        >
-      </a>
-    </div>
-    <div class="brands-carousel__item">
-      <a href="#">
-        <img
-          src="{{ 'LogoJackson.png' | asset_url }}"
-          alt="Jackson"
-          class="brands-carousel"
-          width="{{ icon_width }}"
-          height="{{ icon_height }}"
-        >
-      </a>
-    </div>
-    <div class="brands-carousel__item">
-      <a href="#">
-        <img
-          src="{{ 'LogoPRS.png' | asset_url }}"
-          alt="PRS"
-          class="brands-carousel"
-          width="{{ icon_width }}"
-          height="{{ icon_height }}"
-        >
-      </a>
-    </div>
-    <div class="brands-carousel__item">
-      <a href="#">
-        <img
-          src="{{ 'LogoSchecter.png' | asset_url }}"
-          alt="Schecter"
-          class="brands-carousel"
-          width="{{ icon_width }}"
-          height="{{ icon_height }}"
-        >
-      </a>
-    </div>
-    <div class="brands-carousel__item">
-      <a href="#">
-        <img
-          src="{{ 'LogoTagima.png' | asset_url }}"
-          alt="Tagima"
-          class="brands-carousel"
-          width="{{ icon_width }}"
-          height="{{ icon_height }}"
-        >
-      </a>
-    </div>
-    <div class="brands-carousel__item">
-      <a href="#">
-        <img
-          src="{{ 'LogoYamaha.png' | asset_url }}"
-          alt="Yamaha"
-          class="brands-carousel"
-          width="{{ icon_width }}"
-          height="{{ icon_height }}"
-        >
-      </a>
-    </div>
+    {% for i in (1..12) %}
+      {% assign image = settings["brand_" | append: i | append: "_image"] %}
+      {% assign link = settings["brand_" | append: i | append: "_link"] %}
+      {% if image %}
+        <div class="brands-carousel__item">
+          <a href="{{ link }}">
+            <img
+              src="{{ image | asset_url }}"
+              alt="Brand {{ i }}"
+              class="brands-carousel"
+              width="{{ icon_width }}"
+              height="{{ icon_height }}"
+            >
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
 </div>

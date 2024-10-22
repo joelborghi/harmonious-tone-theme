@@ -1465,5 +1465,34 @@
         "default": "scheme-1"
       }
     ]
+  },
+  {
+    "name": "Guitar Brands",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Manage Guitar Brands"
+      },
+      {
+        "type": "image_picker",
+        "id": "brand_1_image",
+        "label": "Brand 1 Image"
+      },
+      {
+        "type": "url",
+        "id": "brand_1_link",
+        "label": "Brand 1 Link"
+      },
+      {
+        "type": "image_picker",
+        "id": "brand_2_image",
+        "label": "Brand 2 Image"
+      },
+      {
+        "type": "url",
+        "id": "brand_2_link",
+        "label": "Brand 2 Link"
+      }
+    ]
   }
 ]
