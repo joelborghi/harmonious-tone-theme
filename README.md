@@ -34,7 +34,8 @@ To keep track of progress, I created a list of weeks and tasks, completed (✅) 
 * [ ✅ ] Change existing component (announcement bar), add markup, variables, filters, styles... etc.
 * [ ✅ ] Add css animation to header logo
 * [ ✅ ] Theme push - upload local theme files to Shopify, overwriting the remote version
-* [ in progress ] Create a custom component
+* [ ✅ ] Change fonts
+* [ todo ] Create a custom component
 * [ to-do ] Continue making changes / adding features / learning...
 
 ## Dawn theme doc
