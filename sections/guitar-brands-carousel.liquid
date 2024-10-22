@@ -2,7 +2,7 @@
   Renders guitar brands carousel
 
   Usage:
-  {% render 'guitar-brands-carousel' %}
+  {% section 'guitar-brands-carousel' %}
 {% endcomment %}
 
 {% assign icon_width = 250 %}
@@ -15,8 +15,8 @@
 <div class="brands-carousel">
   <div class="brands-carousel__container">
     {% for i in (1..12) %}
-      {% assign image = settings["brand_" | append: i | append: "_image"] %}
-      {% assign link = settings["brand_" | append: i | append: "_link"] %}
+      {% assign image = section.settings["brand_" | append: i | append: "_image"] %}
+      {% assign link = section.settings["brand_" | append: i | append: "_link"] %}
       {% if image %}
         <div class="brands-carousel__item">
           <a href="{{ link }}">
