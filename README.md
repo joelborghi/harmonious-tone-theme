@@ -39,6 +39,8 @@ Enter the 🐰 hole...
 * [ ✅ ] Add css animation to header logo
 * [ ✅ ] Theme push / pull changes - CMS to code, code to CMS, ovewrite changes
 * [ ✅ ] Change fonts through CMS
+* [ ✅ ] Add blog section to home page + posts
+* [ ✅ ] Personalize Contact Page
 * [ in-progress ] Modify components styles
 * [ todo ] Create a custom component
 * [ to-do ] Continue making changes / adding features / learning...
