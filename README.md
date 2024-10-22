@@ -37,8 +37,9 @@ Enter the 🐰 hole...
 * [ ✅ ] Basic theme change through code using liquid
 * [ ✅ ] Change existing component (announcement bar), add markup, variables, filters, styles... etc.
 * [ ✅ ] Add css animation to header logo
-* [ ✅ ] Theme push - upload local theme files to Shopify, overwriting the remote version
-* [ ✅ ] Change fonts
+* [ ✅ ] Theme push / pull changes - CMS to code, code to CMS, ovewrite changes
+* [ ✅ ] Change fonts through CMS
+* [ in-progress ] Modify components styles
 * [ todo ] Create a custom component
 * [ to-do ] Continue making changes / adding features / learning...
 
