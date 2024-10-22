@@ -21,10 +21,12 @@
       {% assign link = section.settings[link_key] %}
 
       {% if image %}
+        {% assign full_image_url = 'https://cdn.shopify.com/s/files/1/0676/5133/8413/' | append: image %}
+
         <div class="brands-carousel__item">
           <a href="{{ link }}">
             <img
-              src="{{ image | image_url: 'master' }}"
+              src="{{ full_image_url | asset_url }}"
               alt="Brand {{ i }}"
               class="brands-carousel"
               width="{{ icon_width }}"
