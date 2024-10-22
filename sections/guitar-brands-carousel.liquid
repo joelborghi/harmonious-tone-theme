@@ -21,12 +21,10 @@
       {% assign link = section.settings[link_key] %}
 
       {% if image %}
-        {% assign full_image_url = 'https://cdn.shopify.com/s/files/1/0676/5133/8413/' | append: image %}
-
         <div class="brands-carousel__item">
           <a href="{{ link }}">
             <img
-              src="{{ full_image_url | asset_url }}"
+              src="{{ image | image_url: 'large' }}"
               alt="Brand {{ i }}"
               class="brands-carousel"
               width="{{ icon_width }}"
@@ -35,7 +33,7 @@
           </a>
         </div>
       {% else %}
-        <p>No image found for Brand {{ i }}</p>
+        <p class="no-image-found">No image found for Brand {{ i }}</p>
       {% endif %}
     {% endfor %}
   </div>

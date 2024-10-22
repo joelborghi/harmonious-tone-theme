@@ -1,4 +1,5 @@
-.brands-carousel {
+.brands-carousel,
+.brands-carousel p.no-image-found {
   display: flex;
   justify-content: center;
   align-items: center;
