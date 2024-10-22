@@ -19,6 +19,10 @@
       {% assign link_key = 'brand_' | append: i | append: '_link' %}
       {% assign image = section.settings[image_key] %}
       {% assign link = section.settings[link_key] %}
+
+      <p>Image Key: {{ image_key }} - Image URL: {{ image }}</p>
+      <!-- Debug output -->
+
       {% if image %}
         <div class="brands-carousel__item">
           <a href="{{ link }}">
@@ -31,6 +35,8 @@
             >
           </a>
         </div>
+      {% else %}
+        <p>No image found for Brand {{ i }}</p>
       {% endif %}
     {% endfor %}
   </div>
