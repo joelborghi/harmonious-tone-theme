@@ -11,6 +11,8 @@ To keep track of progress, I created a list of weeks and tasks, completed (✅) 
 
 #### Week 0 - 14/10/2024
 
+Wake up Neo...
+
 * [ ✅ ] Get basic understanding of Shopify
 * [ ✅ ] Create Shopify Partner's Account
 * [ ✅ ] Setup shopify-cli with npm
@@ -26,6 +28,8 @@ To keep track of progress, I created a list of weeks and tasks, completed (✅) 
 * [ ✅ ] [Guitar shop reference](https://reference.com.br)
 
 #### Week 1 - 21/10/2024
+
+Enter the 🐰 hole...
 
 * [ ✅ ] Link github repository to Shopify to keep track of both CMS and code with [Shopify for GitHub](https://github.com/apps/shopify)
 * [ ✅ ] Pull CMS changes into codebase to understand how it works
