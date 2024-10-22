@@ -15,8 +15,10 @@
 <div class="brands-carousel">
   <div class="brands-carousel__container">
     {% for i in (1..12) %}
-      {% assign image = section.settings["brand_" | append: i | append: "_image"] %}
-      {% assign link = section.settings["brand_" | append: i | append: "_link"] %}
+      {% assign image_key = 'brand_' | append: i | append: '_image' %}
+      {% assign link_key = 'brand_' | append: i | append: '_link' %}
+      {% assign image = section.settings[image_key] %}
+      {% assign link = section.settings[link_key] %}
       {% if image %}
         <div class="brands-carousel__item">
           <a href="{{ link }}">
