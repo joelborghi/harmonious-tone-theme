@@ -48,6 +48,7 @@ Enter the 🐰 hole...
 * [ ✅ ] Improve custom component - refactor liquid code filters (replace <img> tag with liquid's)
 * [ ✅ ] Create another custom component - guitar models (image (body shape) + text + hover effect (increase scale))
 * [ ✅ ] Add hardcoded (should change this later) menu-drawer background image of guitars
+* [ ✅ ] Add hardcoded (should change this later) footer background image of guitars
 * [ in-progress ] Create another custom component - a image and text showing: shipping info, credit card pay, discounts, safe buy
 * [ to-do ] Continue making changes / adding features / learning...
 
