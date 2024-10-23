@@ -1,5 +1,4 @@
-.brands-carousel,
-.brands-carousel p.no-image-found {
+.brands-static-carousel {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +7,7 @@
   list-style: none;
 }
 
-.brands-carousel__container {
+.brands-static-carousel__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -18,11 +17,11 @@
   padding: 25px;
 }
 
-.brands-carousel__item {
+.brands-static-carousel__item {
   margin: 0 10px;
 }
 
-.brands-carousel__title {
+.brands-static-carousel__title {
   font-size: 2.5em;
   font-weight: bold;
   margin: 0 0 10px 0;

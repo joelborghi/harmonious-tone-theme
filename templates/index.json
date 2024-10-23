@@ -188,6 +188,34 @@
         "padding_bottom": 36
       }
     },
+    "guitar_brands_carousel_ndeJdp": {
+      "type": "guitar-brands-carousel",
+      "settings": {
+        "brand_1_image": "shopify://shop_images/LogoBcRich.jpg",
+        "brand_1_link": "",
+        "brand_2_image": "shopify://shop_images/LogoCharvel.jpg",
+        "brand_2_link": "",
+        "brand_3_image": "shopify://shop_images/LogoCort.jpg",
+        "brand_3_link": "",
+        "brand_4_image": "shopify://shop_images/LogoESP.jpg",
+        "brand_4_link": "",
+        "brand_5_image": "shopify://shop_images/LogoFender.jpg",
+        "brand_5_link": "",
+        "brand_6_image": "shopify://shop_images/LogoGibson.jpg",
+        "brand_6_link": "",
+        "brand_7_image": "shopify://shop_images/LogoIbanez.jpg",
+        "brand_7_link": "",
+        "brand_8_image": "shopify://shop_images/LogoJackson.jpg",
+        "brand_8_link": "",
+        "brand_9_image": "shopify://shop_images/PRSLogo.jpg",
+        "brand_9_link": "",
+        "brand_10_link": "",
+        "brand_11_image": "shopify://shop_images/LogoSchecter.jpg",
+        "brand_11_link": "",
+        "brand_12_image": "shopify://shop_images/LogoTagima.jpg",
+        "brand_12_link": ""
+      }
+    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
@@ -252,6 +280,7 @@
     "collage",
     "video",
     "featured_blog_FxDc4z",
+    "guitar_brands_carousel_ndeJdp",
     "multicolumn"
   ]
 }

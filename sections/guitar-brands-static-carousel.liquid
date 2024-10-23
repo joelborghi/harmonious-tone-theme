@@ -2,31 +2,30 @@
   Renders guitar brands carousel
 
   Usage:
-  {% section 'guitar-brands-carousel' %}
+  {% section 'guitar-brands-static-carousel' %}
 {% endcomment %}
 
 {% assign image_width = 250 %}
 {% assign image_height = 200 %}
 
-{{ 'component-brands-carousel.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'brands-carousel.js' | asset_url }}" defer="defer"></script>
+{{ 'component-brands-static-carousel.css' | asset_url | stylesheet_tag }}
 
-<h4 class="brands-carousel__title">Shop by Brand</h4>
-<div class="brands-carousel">
-  <div class="brands-carousel__container">
-    {% for i in (1..12) %}
+<h4 class="brands-static-carousel__title">Shop by Brand</h4>
+<div class="brands-static-carousel">
+  <div class="brands-static-carousel__container">
+    {% for i in (1..13) %}
       {% assign image_key = 'brand_' | append: i | append: '_image' %}
       {% assign link_key = 'brand_' | append: i | append: '_link' %}
       {% assign image = section.settings[image_key] %}
       {% assign link = section.settings[link_key] %}
 
       {% if image %}
-        <div class="brands-carousel__item">
+        <div class="brands-static-carousel__item">
           <a href="{{ link }}">
             <img
               src="{{ image | image_url }}"
               alt="Brand {{ i }}"
-              class="brands-carousel"
+              class="brands-static-carousel"
               width="{{ image_width }}"
               height="{{ image_height }}"
             >
@@ -39,7 +38,7 @@
 
 {% schema %}
 {
-  "name": "Guitar Brands Carousel",
+  "name": "Guitar Brands Static Carousel",
   "settings": [
     {
       "type": "header",
@@ -164,11 +163,21 @@
       "type": "url",
       "id": "brand_12_link",
       "label": "Brand 12 Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "brand_13_image",
+      "label": "Brand 13 Image"
+    },
+    {
+      "type": "url",
+      "id": "brand_13_link",
+      "label": "Brand 13 Link"
     }
   ],
   "presets": [
     {
-      "name": "Guitar Brands Carousel",
+      "name": "Guitar Brands Static Carousel",
       "category": "Custom"
     }
   ]
