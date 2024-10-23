@@ -25,7 +25,8 @@ Wake up Neo...
 * [ ✅ ] Define problem / solution domain (guitar shop / store)
 * [ ✅ ] Check real guitar shops from the internet to capture ideas
 * [ ✅ ] Search and define a real shop to get ideas of components and functionalities
-* [ ✅ ] [Guitar shop reference](https://reference.com.br)
+* [ ✅ ] [Guitar shop reference 0](https://reference.com.br)
+* [ ✅ ] [Guitar shop reference 1](https://www.guitarshop.com.br)
 
 #### Week 1 - 21/10/2024
 
@@ -44,7 +45,9 @@ Enter the 🐰 hole...
 * [ ✅ ] Modify components styles
 * [ ✅ ] Create a custom component - brand static carousel with images of guitar brands
 * [ ✅ ] Improve custom component - add title editing from admin with default
-* [ in-progress ] Create a custom component - brand dynamic carousel with moving images and controls
+* [ ✅ ] Improve custom component - refactor liquid code filters (replace <img> tag with liquid's)
+* [ in-progress ] Create another custom component - a image and text showing: shipping info, credit card pay, discounts, safe buy
+* [ in-progress ] Create another custom component - guitar models (image (body shape) + text + hover effect (increase scale))
 * [ to-do ] Continue making changes / adding features / learning...
 
 ## Dawn theme doc
