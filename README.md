@@ -43,6 +43,7 @@ Enter the 🐰 hole...
 * [ ✅ ] Personalize Contact Page
 * [ ✅ ] Modify components styles
 * [ ✅ ] Create a custom component - brand static carousel with images of guitar brands
+* [ ✅ ] Improve custom component - add title editing from admin with default
 * [ in-progress ] Create a custom component - brand dynamic carousel with moving images and controls
 * [ to-do ] Continue making changes / adding features / learning...
 

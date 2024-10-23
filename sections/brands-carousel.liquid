@@ -10,7 +10,7 @@
 
 {{ 'component-brands-static-carousel.css' | asset_url | stylesheet_tag }}
 
-<h4 class="brands-static-carousel__title">Shop by Brand</h4>
+<h4 class="brands-static-carousel__title">{{ section.settings.title }}</h4>
 <div class="brands-static-carousel">
   <div class="brands-static-carousel__container">
     {% for i in (1..13) %}
@@ -43,6 +43,12 @@
     {
       "type": "header",
       "content": "Manage Guitar Brands"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title for the Carousel",
+      "default": "Shop by Brand"
     },
     {
       "type": "image_picker",
