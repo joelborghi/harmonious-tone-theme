@@ -156,6 +156,30 @@
         "padding_bottom": 36
       }
     },
+    "guitar_models_cKNyJA": {
+      "type": "guitar-models",
+      "settings": {
+        "title": "Guitar Models",
+        "model_1_image": "shopify://shop_images/jazzmaster.jpg",
+        "model_1_link": "",
+        "type_1_subtitle": "Jazzmaster",
+        "model_2_image": "shopify://shop_images/beatles.jpg",
+        "model_2_link": "",
+        "type_2_subtitle": "Beatles",
+        "model_3_image": "shopify://shop_images/acoustic.jpg",
+        "model_3_link": "",
+        "type_3_subtitle": "Acoustic",
+        "model_4_image": "shopify://shop_images/v.jpg",
+        "model_4_link": "",
+        "type_4_subtitle": "Flying V",
+        "model_5_image": "shopify://shop_images/tele.jpg",
+        "model_5_link": "",
+        "type_5_subtitle": "Telecaster",
+        "model_6_image": "shopify://shop_images/strat.jpg",
+        "model_6_link": "",
+        "type_6_subtitle": "Stratocaster"
+      }
+    },
     "video": {
       "type": "video",
       "settings": {
@@ -247,6 +271,7 @@
     "brands_carousel_fL4cfj": {
       "type": "brands-carousel",
       "settings": {
+        "title": "Shop by Brand",
         "brand_1_image": "shopify://shop_images/LogoBcRich.jpg",
         "brand_1_link": "",
         "brand_2_image": "shopify://shop_images/LogoSchecter.jpg",
@@ -280,6 +305,7 @@
     "rich_text",
     "featured_collection",
     "collage",
+    "guitar_models_cKNyJA",
     "video",
     "featured_blog_FxDc4z",
     "multicolumn",
