@@ -5,8 +5,8 @@
   {% section 'guitar-brands-carousel' %}
 {% endcomment %}
 
-{% assign icon_width = 250 %}
-{% assign icon_height = 200 %}
+{% assign image_width = 250 %}
+{% assign image_height = 200 %}
 
 {{ 'component-brands-carousel.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'brands-carousel.js' | asset_url }}" defer="defer"></script>
@@ -24,11 +24,11 @@
         <div class="brands-carousel__item">
           <a href="{{ link }}">
             <img
-              src="{{ image.src | image_url: 'large' }}"
+              src="{{ image | image_url: 'large' }}"
               alt="Brand {{ i }}"
               class="brands-carousel"
-              width="{{ icon_width }}"
-              height="{{ icon_height }}"
+              width="{{ image_width }}"
+              height="{{ image_height }}"
             >
           </a>
         </div>

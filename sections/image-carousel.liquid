@@ -1,0 +1,41 @@
+{% assign image_width = 500 %}
+{% assign image_height = 500 %}
+
+{{ 'component-image-carousel.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'image-carousel.js' | asset_url }}" defer="defer"></script>
+
+<div class="image-carousel">
+  <div class="carousel-container">
+    {% for image in section.settings.images %}
+      <div class="carousel-slide">
+        <img
+          src="{{ image | image_url: '800x' }}"
+          alt="{{ image.alt | escape }}"
+          width="{{ image_width }}"
+          height="{{ image_height }}"
+        >
+      </div>
+    {% endfor %}
+  </div>
+  <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+  <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+{% schema %}
+{
+  "name": "Image Carousel",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "images",
+      "label": "Image List"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Carousel",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
