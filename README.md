@@ -42,7 +42,8 @@ Enter the 🐰 hole...
 * [ ✅ ] Add blog section to home page + posts
 * [ ✅ ] Personalize Contact Page
 * [ ✅ ] Modify components styles
-* [ in-progress ] Create a custom component - brand carousel with dynamic images
+* [ ✅ ] Create a custom component - brand static carousel with images of guitar brands
+* [ in-progress ] Create a custom component - brand dynamic carousel with moving images and controls
 * [ to-do ] Continue making changes / adding features / learning...
 
 ## Dawn theme doc
