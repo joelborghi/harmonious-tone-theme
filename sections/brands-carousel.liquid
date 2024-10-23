@@ -22,13 +22,14 @@
       {% if image %}
         <div class="brands-static-carousel__item">
           <a href="{{ link }}">
-            <img
-              src="{{ image | image_url }}"
-              alt="Brand {{ i }}"
-              class="brands-static-carousel"
-              width="{{ image_width }}"
-              height="{{ image_height }}"
-            >
+            {{
+              image
+              | image_url: image_width
+              | append: 'x'
+              | append: image_height
+              | image_tag: 'Brand '
+              | append: i, class: 'brands-static-carousel'
+            }}
           </a>
         </div>
       {% endif %}
