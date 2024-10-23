@@ -1,0 +1,150 @@
+{% comment %}
+  Renders guitar models carousel
+
+  Usage:
+  {% section 'guitar-models' %}
+{% endcomment %}
+
+{% assign image_width = 250 %}
+{% assign image_height = 200 %}
+
+{{ 'guitar-models.css' | asset_url | stylesheet_tag }}
+
+<h4 class="guitar-models__title">{{ section.settings.title }}</h4>
+<div class="guitar-models">
+  <div class="guitar-models__container">
+    {% for i in (1..13) %}
+      {% assign image_key = 'model_' | append: i | append: '_image' %}
+      {% assign link_key = 'model_' | append: i | append: '_link' %}
+      {% assign type_key = 'type_' | append: i | append: '_subtitle' %}
+      {% assign image = section.settings[image_key] %}
+      {% assign link = section.settings[link_key] %}
+      {% assign type = section.settings[type_key] %}
+
+      {% if image %}
+        <div class="guitar-models__item">
+          <a href="{{ link }}">
+            {{ image | image_url: width: image_width, height: image_height | image_tag: class: 'guitar-models__image' }}
+          </a>
+          <div class="guitar-models-model">
+            <h5 class="guitar-models-model__subtitle">{{ type }}</h5>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Guitar Models",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Manage Guitar models"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title for the Models Section",
+      "default": "Guitar Models"
+    },
+    {
+      "type": "image_picker",
+      "id": "model_1_image",
+      "label": "model 1 Image"
+    },
+    {
+      "type": "url",
+      "id": "model_1_link",
+      "label": "model 1 Link"
+    },
+    {
+      "type": "text",
+      "id": "type_1_subtitle",
+      "label": "type 1 subtitle"
+    },
+    {
+      "type": "image_picker",
+      "id": "model_2_image",
+      "label": "model 2 Image"
+    },
+    {
+      "type": "url",
+      "id": "model_2_link",
+      "label": "model 2 Link"
+    },
+    {
+      "type": "text",
+      "id": "type_2_subtitle",
+      "label": "type 2 subtitle"
+    },
+    {
+      "type": "image_picker",
+      "id": "model_3_image",
+      "label": "model 3 Image"
+    },
+    {
+      "type": "url",
+      "id": "model_3_link",
+      "label": "model 3 Link"
+    },
+    {
+      "type": "text",
+      "id": "type_3_subtitle",
+      "label": "type 3 subtitle"
+    },
+    {
+      "type": "image_picker",
+      "id": "model_4_image",
+      "label": "model 4 Image"
+    },
+    {
+      "type": "url",
+      "id": "model_4_link",
+      "label": "model 4 Link"
+    },
+    {
+      "type": "text",
+      "id": "type_4_subtitle",
+      "label": "type 4 subtitle"
+    },
+    {
+      "type": "image_picker",
+      "id": "model_5_image",
+      "label": "model 5 Image"
+    },
+    {
+      "type": "url",
+      "id": "model_5_link",
+      "label": "model 5 Link"
+    },
+    {
+      "type": "text",
+      "id": "type_5_subtitle",
+      "label": "type 5 subtitle"
+    },
+    {
+      "type": "image_picker",
+      "id": "model_6_image",
+      "label": "model 3 Image"
+    },
+    {
+      "type": "url",
+      "id": "model_6_link",
+      "label": "model 6 Link"
+    },
+    {
+      "type": "text",
+      "id": "type_6_subtitle",
+      "label": "type 6 subtitle"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Guitar Models",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
