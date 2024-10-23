@@ -15,10 +15,17 @@
   overflow: hidden;
   margin: 40px 25px;
   padding: 25px;
+  border: 2px solid black;
+  border-radius: 20px;
 }
 
 .brands-static-carousel__item {
   margin: 0 10px;
+}
+
+.brands-static-carousel__item:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
 }
 
 .brands-static-carousel__title {
