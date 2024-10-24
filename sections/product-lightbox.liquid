@@ -8,19 +8,21 @@
 {{ 'product-lightbox.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'product-lightbox.js' | asset_url }}" defer></script>
 
-{% assign image_width = 500 %}
-{% assign image_height = 500 %}
+{% assign image_width = 400 %}
+{% assign image_height = 400 %}
 
 {% assign image = section.settings.product_image %}
 
 <div id="product-lightbox" class="lightbox" style="display: none;">
   <div class="lightbox-content">
     <span class="close-button" id="close-lightbox">&times;</span>
-    {{
-      image
-      | image_url: width: image_width, height: image_height
-      | image_tag: class: 'product-carousel__image', alt: product.title
-    }}
+    <a href="{{ section.settings.product_url }}">
+      {{
+        image
+        | image_url: width: image_width, height: image_height
+        | image_tag: class: 'product-carousel__image', alt: product.title
+      }}
+    </a>
     <h2 class="lightbox-title">{{ product.title }}</h2>
     <p class="lightbox-text">{{ section.settings.title }}</p>
     <a href="/collections/all" class="cta-button">View All Products</a>
@@ -45,6 +47,11 @@
       "type": "image_picker",
       "id": "product_image",
       "label": "product image"
+    },
+    {
+      "type": "url",
+      "id": "product_url",
+      "label": "product url"
     }
   ],
   "presets": [
