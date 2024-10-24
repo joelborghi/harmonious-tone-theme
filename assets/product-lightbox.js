@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Check if the lightbox has been shown before
   if (!getCookie('lightboxShown')) {
-    // Show the lightbox
-    document.getElementById('product-lightbox').style.display = 'flex';
+    setTimeout(function () {
+      document.getElementById('product-lightbox').style.display = 'flex';
+    }, 7000);
   }
 
   // Close button click event
@@ -12,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
     setCookie('lightboxShown', 'true', 365);
   };
 
-  // Function to set a cookie
   function setCookie(name, value, days) {
     var expires = '';
     if (days) {
@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.cookie = name + '=' + (value || '') + expires + '; path=/';
   }
 
-  // Function to get a cookie
   function getCookie(name) {
     var nameEQ = name + '=';
     var ca = document.cookie.split(';');
