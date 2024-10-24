@@ -57,6 +57,15 @@
         "show_text_below": false
       }
     },
+    "product_lightbox_4hNBBG": {
+      "type": "product-lightbox",
+      "settings": {
+        "title": "Check it out!",
+        "cta_text": "View now!",
+        "product_image": "shopify://shop_images/ClassikGT2.jpg",
+        "product_url": "classik-gt2"
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -308,6 +317,7 @@
   },
   "order": [
     "image_banner",
+    "product_lightbox_4hNBBG",
     "rich_text",
     "featured_collection",
     "collage",
