@@ -27,6 +27,7 @@ Wake up Neo...
 * [ ✅ ] Search and define a real shop to get ideas of components and functionalities
 * [ ✅ ] [Guitar shop reference 0](https://reference.com.br)
 * [ ✅ ] [Guitar shop reference 1](https://www.guitarshop.com.br)
+* [ ✅ ] [Guitar shop reference 2](https://www.guitarcenter.com)
 
 #### Week 1 - 21/10/2024
 
