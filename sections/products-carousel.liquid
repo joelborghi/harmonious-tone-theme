@@ -1,0 +1,63 @@
+{% comment %}
+  Renders products carousel
+
+  Usage:
+  {% section 'products-carousel' %}
+{% endcomment %}
+
+{% assign image_width = 500 %}
+{% assign image_height = 500 %}
+
+{{ 'products-carousel.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'products-carousel.js' | asset_url }}" defer></script>
+
+<h4 class="products-carousel__title">{{ section.settings.title }}</h4>
+<div class="product-carousel">
+  <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button>
+  <div class="carousel-container">
+    <div class="carousel-items">
+      {% for product in collections.all.products %}
+        <div class="carousel-item">
+          <a href="{{ product.url }}">
+            {% if product.featured_image %}
+              {{
+                product.featured_image
+                | image_url: width: image_width, height: image_height
+                | image_tag: class: 'product-carousel__image', alt: product.title
+              }}
+            {% else %}
+              {{ product.featured_image | placeholder_svg_tag }}
+            {% endif %}
+            <h3>{{ product.title }}</h3>
+            <p class="price">{{ product.price | money }}</p>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <button class="carousel-button next" onclick="moveCarousel(1)">&#10095;</button>
+</div>
+
+{% schema %}
+{
+  "name": "Products Carousel",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Display products in a carousel"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title for the Carousel",
+      "default": "Featured Products"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Products Carousel",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
