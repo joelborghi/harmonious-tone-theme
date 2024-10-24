@@ -180,6 +180,12 @@
         "type_6_subtitle": "Stratocaster"
       }
     },
+    "products_carousel_xagXQJ": {
+      "type": "products-carousel",
+      "settings": {
+        "title": "Featured Products"
+      }
+    },
     "video": {
       "type": "video",
       "settings": {
@@ -306,6 +312,7 @@
     "featured_collection",
     "collage",
     "guitar_models_cKNyJA",
+    "products_carousel_xagXQJ",
     "video",
     "featured_blog_FxDc4z",
     "multicolumn",
