@@ -51,6 +51,7 @@ Enter the 🐰 hole...
 * [ ✅ ] Add hardcoded (should change this later) menu-drawer background image of guitars
 * [ ✅ ] Add hardcoded (should change this later) footer background image of guitars
 * [ ✅ ] Create another custom component - products carousel
+* [ ✅ ] Create another custom component - product lightbox (image + text + cta)
 * [ in-progress ] Improve announcement bar - make it possible for users to add remove icons
 * [ in-progress ] Create another custom component - a image and text showing: shipping info, credit card pay, discounts, safe buy
 * [ to-do ] Continue making changes / adding features / learning...

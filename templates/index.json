@@ -60,10 +60,11 @@
     "product_lightbox_4hNBBG": {
       "type": "product-lightbox",
       "settings": {
-        "title": "Check it out!",
-        "cta_text": "View now!",
+        "title": "Buy now!",
+        "cta_text": "View our collection!",
         "product_image": "shopify://shop_images/ClassikGT2.jpg",
-        "product_url": "classik-gt2"
+        "product_url": "classik-gt2",
+        "product_title": "Classik GT2"
       }
     },
     "rich_text": {
