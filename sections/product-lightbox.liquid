@@ -25,7 +25,7 @@
     </a>
     <h2 class="lightbox-title">{{ product.title }}</h2>
     <p class="lightbox-text">{{ section.settings.title }}</p>
-    <a href="/collections/all" class="cta-button">View All Products</a>
+    <a href="/collections/all" class="cta-button">{{ section.settings.cta_text }}</a>
   </div>
 </div>
 
@@ -35,7 +35,7 @@
   "settings": [
     {
       "type": "header",
-      "content": "Manage Guitar models"
+      "content": "Add a lightbox popup"
     },
     {
       "type": "text",
@@ -44,12 +44,18 @@
       "default": "Check it out!"
     },
     {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA text of the lightbox",
+      "default": "View now!"
+    },
+    {
       "type": "image_picker",
       "id": "product_image",
       "label": "product image"
     },
     {
-      "type": "url",
+      "type": "product",
       "id": "product_url",
       "label": "product url"
     }
