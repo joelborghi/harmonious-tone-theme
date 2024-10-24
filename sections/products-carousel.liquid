@@ -28,7 +28,7 @@
             {% else %}
               {{ product.featured_image | placeholder_svg_tag }}
             {% endif %}
-            <h3>{{ product.title }}</h3>
+            <h3 class="products-carousel-title">{{ product.title }}</h3>
             <p class="price">{{ product.price | money }}</p>
           </a>
         </div>

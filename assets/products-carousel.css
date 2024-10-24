@@ -6,13 +6,12 @@
   overflow: hidden;
 }
 
-.carousel-container {
+.carousel-container, .carousel-items {
   display: flex;
-  transition: transform 0.5s ease;
 }
 
 .carousel-items {
-  display: flex;
+  transition: transform 0.5s ease;
 }
 
 .carousel-item {
