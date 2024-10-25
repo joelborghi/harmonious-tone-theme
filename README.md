@@ -57,5 +57,9 @@ Enter the 🐰 hole...
 * [ in-progress ] Create another custom component - a image and text showing: shipping info, credit card pay, discounts, safe buy
 * [ to-do ] Continue making changes / adding features / learning...
 
+#### Week 2 - 28/10/2024
+
+Coming soon...
+
 ## Dawn theme doc
 * https://github.com/Shopify/dawn
