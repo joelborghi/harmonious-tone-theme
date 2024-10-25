@@ -34,25 +34,25 @@ Here’s my structured learning roadmap as I progress through Shopify developmen
 
 > *Enter the 🐰 hole...*
 
-- [✅] Link GitHub repository to Shopify for synchronized tracking using [Shopify for GitHub](https://github.com/apps/shopify)
-- [✅] Pull CMS changes into codebase for a comprehensive understanding
-- [✅] Familiarize with the theme file structure
-- [✅] Implement basic theme changes through Liquid templating
-- [✅] Enhance the announcement bar component with new markup and styles
-- [✅] Add CSS animation to the header logo
-- [✅] Master theme push/pull changes between CMS and code
-- [✅] Change fonts through the CMS
-- [✅] Add a blog section to the homepage and create posts
-- [✅] Personalize the contact page
-- [✅] Modify the styles of existing components
-- [✅] Create a custom static carousel component featuring various guitar brands
-- [✅] Improve custom components (add title edits from admin, refactor Liquid filters, etc.)
-- [✅] Create a custom component for displaying guitar models (with hover effects)
-- [✅] Add temporary hardcoded backgrounds (to be updated later) for menu-drawer and footer sections
-- [✅] Design additional custom components:
+- ✅ Link GitHub repository to Shopify for synchronized tracking using [Shopify for GitHub](https://github.com/apps/shopify)
+- ✅ Pull CMS changes into codebase for a comprehensive understanding
+- ✅ Familiarize with the theme file structure
+- ✅ Implement basic theme changes through Liquid templating
+- ✅ Enhance the announcement bar component with new markup and styles
+- ✅ Add CSS animation to the header logo
+- ✅ Master theme push/pull changes between CMS and code
+- ✅ Change fonts through the CMS
+- ✅ Add a blog section to the homepage and create posts
+- ✅ Personalize the contact page
+- ✅ Modify the styles of existing components
+- ✅ Create a custom static carousel component featuring various guitar brands
+- ✅ Improve custom components (add title edits from admin, refactor Liquid filters, etc.)
+- ✅ Create a custom component for displaying guitar models (with hover effects)
+- ✅ Add temporary hardcoded backgrounds (to be updated later) for menu-drawer and footer sections
+- ✅ Design additional custom components:
   - Products carousel
   - Product lightbox that displays images, text, and CTAs
-- [✅] Enhance styling of the product lightbox component
+- ✅ Enhance styling of the product lightbox component
 
 ### Week 2 - 28/10/2024
 
