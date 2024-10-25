@@ -22,9 +22,10 @@
         | image_url: width: image_width, height: image_height
         | image_tag: class: 'product-carousel__image', alt: product.title
       }}
+      <h2 class="lightbox-title">{{ section.settings.product_title }}</h2>
+      <p class="lightbox-text">{{ section.settings.title }}</p>
     </a>
-    <h2 class="lightbox-title">{{ section.settings.product_title }}</h2>
-    <p class="lightbox-text">{{ section.settings.title }}</p>
+
     <a href="/collections/all" class="cta-button">{{ section.settings.cta_text }}</a>
   </div>
 </div>
