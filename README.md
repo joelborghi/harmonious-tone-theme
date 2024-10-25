@@ -53,13 +53,12 @@ Enter the 🐰 hole...
 * [ ✅ ] Create another custom component - products carousel
 * [ ✅ ] Create another custom component - product lightbox (image + text + cta)
 * [ ✅ ] Improve custom component - product lightbox (extra css)
-* [ in-progress ] Improve announcement bar - make it possible for users to add remove icons
-* [ in-progress ] Create another custom component - a image and text showing: shipping info, credit card pay, discounts, safe buy
-* [ to-do ] Continue making changes / adding features / learning...
 
 #### Week 2 - 28/10/2024
 
-Coming soon...
+* [ to-do ] Improve announcement bar - make it possible for users to add remove icons
+* [ to-do ] Create another custom component - a image and text showing: shipping info, credit card pay, discounts, safe buy
+* [ to-do ] Continue making changes / adding features / learning...
 
 ## Dawn theme doc
 * https://github.com/Shopify/dawn
