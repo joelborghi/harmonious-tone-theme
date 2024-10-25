@@ -14,18 +14,18 @@ Here’s my structured learning roadmap as I progress through Shopify developmen
 
 > *Wake up, Neo...*
 
-- [✅] Get a basic understanding of Shopify
-- [✅] Create a Shopify Partner Account
-- [✅] Set up Shopify CLI with NPM
-- [✅] Grasp the fundamentals of Shopify objects
-- [✅] Understand Liquid templating language
-- [✅] Learn about Liquid filters
-- [✅] Create a development store
-- [✅] Start a new theme based on the Dawn template
-- [✅] Update theme visuals through the CMS editor
-- [✅] Define the problem/solution domain (guitar shop/store)
-- [✅] Research real guitar shops for design inspiration
-- [✅] Identify real-life Shopify stores for functional ideas
+- ✅ Get a basic understanding of Shopify
+- ✅ Create a Shopify Partner Account
+- ✅ Set up Shopify CLI with NPM
+- ✅ Grasp the fundamentals of Shopify objects
+- ✅ Understand Liquid templating language
+- ✅ Learn about Liquid filters
+- ✅ Create a development store
+- ✅ Start a new theme based on the Dawn template
+- ✅ Update theme visuals through the CMS editor
+- ✅ Define the problem/solution domain (guitar shop/store)
+- ✅ Research real guitar shops for design inspiration
+- ✅ Identify real-life Shopify stores for functional ideas
   - [Guitar Shop Reference 0](https://reference.com.br)
   - [Guitar Shop Reference 1](https://www.guitarshop.com.br)
   - [Guitar Shop Reference 2](https://www.guitarcenter.com)
