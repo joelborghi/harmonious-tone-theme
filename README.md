@@ -54,11 +54,9 @@ Here’s my structured learning roadmap as I progress through Shopify developmen
   - Product lightbox that displays images, text, and CTAs
 - ✅ Enhance styling of the product lightbox component
 
-### Week 2 - 28/10/2024
+### 2025 updates
 
-- [ ] Improve the announcement bar by enabling user-customizable icons
-- [ ] Create another custom component for displaying important info (shipping details, payment methods, discounts, security assurance)
-- [ ] Continue to make changes and learn through feature enhancements
+- [ ] Generate a component and test if it worked
 
 ## Resources
 
