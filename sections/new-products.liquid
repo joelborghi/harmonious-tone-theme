@@ -1,0 +1,101 @@
+{%- style -%}
+  .section-{{ section.id }}-new-products {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+
+  .section-{{ section.id }}-product-card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 100%;
+    max-width: 400px;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-{{ section.id }}-product-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .section-{{ section.id }}-product-brand {
+    font-weight: bold;
+    margin-top: 16px;
+  }
+
+  .section-{{ section.id }}-product-description {
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .section-{{ section.id }}-product-price {
+    font-weight: bold;
+    margin-top: 16px;
+  }
+
+  .section-{{ section.id }}-colors-available {
+    margin-top: 16px;
+  }
+
+  @media (min-width: 750px) {
+    .section-{{ section.id }}-product-card {
+      max-width: 300px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-new-products">
+  {% for product in section.settings.products %}
+    <div class="section-{{ section.id }}-product-card">
+      <img
+        class="section-{{ section.id }}-product-image"
+        src="{{ product.image | image_url }}"
+        alt="{{ product.image.alt }}"
+        width="{{ product.image.width }}"
+        height="{{ product.image.height }}"
+      >
+      <div class="section-{{ section.id }}-product-brand">{{ product.brand }}</div>
+      <div class="section-{{ section.id }}-product-price">${{ product.price }}</div>
+      <a href="#" class="section-{{ section.id }}-colors-available">Colors Available</a>
+    </div>
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "New Products",
+  "settings": [
+    {
+      "type": "product_list",
+      "id": "products",
+      "label": "Products",
+      "limit": 3
+    }
+  ],
+  "presets": [
+    {
+      "name": "New Products"
+    }
+  ]
+}
+{% endschema %}
+
+{% javascript %}
+  const newProductsSection = document.querySelector('.section-{{ section.id }}-new-products');
+
+  newProductsSection.addEventListener('click', (event) => {
+    const colorsAvailableLink = event.target.closest('.section-{{ section.id }}-colors-available');
+    if (colorsAvailableLink) {
+      // Handle color options display
+      event.preventDefault();
+      console.log('Show color options for product');
+    }
+  });
+{% endjavascript %}
