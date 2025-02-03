@@ -1,0 +1,142 @@
+{% schema %}
+{
+  "name": "Card Section",
+  "tag": "section",
+  "class": "card-section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top Padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom Padding",
+      "default": 52
+    },
+    {
+      "type": "color",
+      "id": "card_background_color",
+      "label": "Card Background Color",
+      "default": "#d8d8d8"
+    },
+    {
+      "type": "color",
+      "id": "button_background_color",
+      "label": "Button Background Color",
+      "default": "#454545"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "heading_text_color",
+      "label": "Heading Text Color",
+      "default": "#303030"
+    },
+    {
+      "type": "text",
+      "id": "card_heading",
+      "label": "Card Heading",
+      "default": "Lorem ipsum lorem ipsum"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "CLICK HERE"
+    },
+    {
+      "type": "image_picker",
+      "id": "card_image",
+      "label": "Card Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Card Section"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+  .card-section {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .card-section {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .card-container {
+    width: 371px;
+    height: 369px;
+    background-color: {{ section.settings.card_background_color }};
+  }
+
+  .card-image {
+    width: 296px;
+    height: 182px;
+    margin: 37px 37.5px;
+  }
+
+  .card-heading {
+    margin: 0 59px 25px;
+    color: {{ section.settings.heading_text_color }};
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .card-button {
+    width: 252px;
+    height: 54px;
+    margin: 0 59.5px;
+    background-color: {{ section.settings.button_background_color }};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-button-text {
+    color: {{ section.settings.button_text_color }};
+    font-size: 22px;
+  }
+{% endstylesheet %}
+
+<div class="card-section">
+  <div class="card-container">
+    {% if section.settings.card_image != blank %}
+      <img
+        class="card-image"
+        src="{{ section.settings.card_image | img_url: '296x182' }}"
+        width="{{ section.settings.card_image.width }}"
+        height="{{ section.settings.card_image.height }}"
+        loading="lazy"
+        alt="{{ section.settings.card_image.alt }}"
+      >
+    {% endif %}
+    <div class="card-heading">{{ section.settings.card_heading }}</div>
+    <div class="card-button">
+      <span class="card-button-text">{{ section.settings.button_text }}</span>
+    </div>
+  </div>
+</div>
