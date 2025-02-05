@@ -25,7 +25,7 @@
         {{ section.settings.text }}
       </div>
       <div class="card__button" style="background-color: {{ section.settings.button_color }};">
-        <a href="{{ section.settings.button_link }}">{{ section.settings.button_text }}</a>
+        <a href="{{ section.settings.button_link | default: '#' }}">{{ section.settings.button_text }}</a>
       </div>
     </div>
   </div>
