@@ -15,7 +15,9 @@
 <div class="section-{{ section.id }}-padding">
   <div class="card">
     <div class="card__background" style="background-color: {{ section.settings.background_color }};">
-      {{ section.settings.background_image | image_url: width: 371 | image_tag }}
+      {% if section.settings.background_image %}
+        {{ section.settings.background_image | image_url: width: 371 | image_tag }}
+      {% endif %}
     </div>
     <div class="card__content">
       <div class="card__image">
