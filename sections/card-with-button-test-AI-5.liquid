@@ -15,7 +15,7 @@
     }
 
     .card {
-      background-color: rgb({{ settings.card_bg_color }});
+      background-color: {{ settings.card_bg_color }};
       width: 371px;
       height: 369px;
     }
@@ -27,18 +27,18 @@
     .card__image-wrapper {
       width: 296px;
       height: 182px;
-      background-color: rgb({{ settings.card_image_bg_color }});
+      background-color: {{ settings.card_image_bg_color }};
     }
 
     .card__text {
-      color: rgb({{ settings.card_text_color }});
+      color: {{ settings.card_text_color }};
       font-size: 20px;
       margin-top: 25px;
     }
 
     .card__button {
       background-color: {{ settings.card_button_bg_color }};
-      color: rgb({{ settings.card_button_text_color }});
+      color: {{ settings.card_button_text_color }};
       font-size: 22px;
       padding: 16px;
       text-align: center;
@@ -121,25 +121,25 @@
       "type": "color",
       "id": "card_bg_color",
       "label": "Card Background Color",
-      "default": "0.85,0.85,0.85"
+      "default": "#D9D9D9"
     },
     {
       "type": "color",
       "id": "card_image_bg_color",
       "label": "Image Background Color",
-      "default": "0.67,0.66,0.66"
+      "default": "#A9A8A8"
     },
     {
       "type": "color",
       "id": "card_text_color",
       "label": "Text Color",
-      "default": "0.19,0.18,0.18"
+      "default": "#303030"
     },
     {
       "type": "color",
       "id": "card_button_bg_color",
       "label": "Button Background Color",
-      "default": "0.27,0.24,0.24"
+      "default": "#440C0C"
     },
     {
       "type": "color",
