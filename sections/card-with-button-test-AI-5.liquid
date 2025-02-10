@@ -1,73 +1,69 @@
-{% if section.blocks.size == 0 %}
-  <div>This section is empty.</div>
-{% else %}
-  {%- style -%}
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+  }
 
-    @media screen and (min-width: 750px) {
-      .section-{{ section.id }}-padding {
-        padding-top: {{ section.settings.padding_top }}px;
-        padding-bottom: {{ section.settings.padding_bottom }}px;
-      }
-    }
+  .card {
+    background-color: {{ settings.card_bg_color }};
+    width: 371px;
+    height: 369px;
+  }
 
-    .card {
-      background-color: {{ settings.card_bg_color }};
-      width: 371px;
-      height: 369px;
-    }
+  .card__content {
+    padding: 31px 37px;
+  }
 
-    .card__content {
-      padding: 31px 37px;
-    }
+  .card__image-wrapper {
+    width: 296px;
+    height: 182px;
+    background-color: {{ settings.card_image_bg_color }};
+  }
 
-    .card__image-wrapper {
-      width: 296px;
-      height: 182px;
-      background-color: {{ settings.card_image_bg_color }};
-    }
+  .card__text {
+    color: {{ settings.card_text_color }};
+    font-size: 20px;
+    margin-top: 25px;
+  }
 
-    .card__text {
-      color: {{ settings.card_text_color }};
-      font-size: 20px;
-      margin-top: 25px;
-    }
+  .card__button {
+    background-color: {{ settings.card_button_bg_color }};
+    color: {{ settings.card_button_text_color }};
+    font-size: 22px;
+    padding: 16px;
+    text-align: center;
+    margin-top: 20px;
+  }
+{%- endstyle -%}
 
-    .card__button {
-      background-color: {{ settings.card_button_bg_color }};
-      color: {{ settings.card_button_text_color }};
-      font-size: 22px;
-      padding: 16px;
-      text-align: center;
-      margin-top: 20px;
-    }
-  {%- endstyle -%}
-
-  <div class="section-{{ section.id }}-padding">
-    <div class="card">
-      <div class="card__content">
-        <div class="card__image-wrapper">
-          {% if section.settings.card_image != blank %}
-            {{ section.settings.card_image | image_url: width: 296 | image_tag }}
-          {% else %}
-            <div>No image selected</div>
-          {% endif %}
-        </div>
-        <div class="card__text">{{ section.settings.card_text }}</div>
-        <div class="card__button">
-          {% if section.settings.card_button_url != blank %}
-            <a href="{{ section.settings.card_button_url }}">{{ section.settings.card_button_text }}</a>
-          {% else %}
-            {{ section.settings.card_button_text }}
-          {% endif %}
-        </div>
+<div class="section-{{ section.id }}-padding">
+  <div class="card">
+    <div class="card__content">
+      <div class="card__image-wrapper">
+        {% if section.settings.card_image != blank %}
+          {{ section.settings.card_image | image_url: width: 296 | image_tag }}
+        {% else %}
+          <div>No image selected</div>
+        {% endif %}
+      </div>
+      <div class="card__text">{{ section.settings.card_text }}</div>
+      <div class="card__button">
+        {% if section.settings.card_button_url != blank %}
+          <a href="{{ section.settings.card_button_url }}">{{ section.settings.card_button_text }}</a>
+        {% else %}
+          {{ section.settings.card_button_text }}
+        {% endif %}
       </div>
     </div>
   </div>
-{% endif %}
+</div>
 
 {% schema %}
 {
