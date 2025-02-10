@@ -1,0 +1,86 @@
+{% style %}
+  .card {
+    width: 371px;
+    height: 369px;
+    background-color: #d8d8d8;
+    border-radius: 4px;
+    position: relative;
+  }
+
+  .card__content {
+    position: absolute;
+    top: 31px;
+    left: 37px;
+    width: 296px;
+    height: 182px;
+    background-color: #ababab;
+    border-radius: 4px;
+  }
+
+  .card__title {
+    position: absolute;
+    top: 238px;
+    left: 59px;
+    width: 252px;
+    height: 32px;
+    background-color: #303030;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 32px;
+    padding: 0 10px;
+  }
+
+  .card__button {
+    position: absolute;
+    bottom: 20px;
+    left: 59px;
+    width: 252px;
+    height: 54px;
+    background-color: #454545;
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 54px;
+    text-align: center;
+    border-radius: 4px;
+  }
+{% endstyle %}
+
+<div class="card">
+  <div class="card__content"></div>
+  <div class="card__title">{{ section.settings.title }}</div>
+  <a href="{{ section.settings.button_url }}" class="card__button">
+    {{ section.settings.button_text }}
+  </a>
+</div>
+
+{% schema %}
+{
+  "name": "Card with button VI",
+  "tag": "section",
+  "class": "card-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Lorem ipsum lorem ipsum"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "CLICK HERE"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Card with button VI"
+    }
+  ]
+}
+{% endschema %}
